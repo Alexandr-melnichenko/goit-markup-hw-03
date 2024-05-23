@@ -9,7 +9,40 @@ a {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.container {
+    width: 1158px; 
+    padding: 0 15px;  
+    margin: 0 auto; 
+}
+
+.header {
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 /*-------------header------------*/
 .logo {
   font-family: "Raleway", sans-serif;
@@ -19,6 +52,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .part-logo {
@@ -31,6 +65,8 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -40,6 +76,7 @@ ol {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-link {
@@ -66,6 +103,9 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0;
+  padding-top: 188px;
 }
 
 .button-hero {
@@ -76,14 +116,46 @@ ol {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  margin-bottom: 188px;
 }
 .button-hero:hover,
 .button-hero:focus {
   background: #404bbf;
 }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  /*padding: 188px 472px 292px;*/
+}
 /*----------------------------*/
 
 /*-------------Company------------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.company-box {
+  display: flex;
+  gap: 24px;
+  margin: 120px 0;
+}
 
 .section-company {
 }
@@ -126,6 +198,15 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  margin: 0;
+}
+
+.team-box {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .image-section-team {
@@ -162,6 +243,8 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding: 120px 0 72px;
+  margin: 0;
 }
 
 .image-section-portfolio {
@@ -179,6 +262,14 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
 }
 
 /*----------------------------*/
