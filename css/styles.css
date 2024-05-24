@@ -127,8 +127,9 @@ img {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
   border-radius: 4px;
   margin: 0 auto;
 }
@@ -163,7 +164,7 @@ img {
 }
 
 .li-company {
-  width: calc ((100% - 24px * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .company-title {
@@ -175,6 +176,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .company-text {
@@ -184,6 +187,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
 }
 /*----------------------------*/
 
@@ -195,7 +199,12 @@ img {
 
 .li-section-team {
   background-color: #ffffff;
-  width: calc ((100% - 24px * 3) / 4);
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px; 
+}
+
+.team-names {
+  padding: 32px 0;
 }
 
 .title-section-team {
@@ -222,6 +231,8 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .text-sectiom-team {
@@ -230,6 +241,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin: 0;
 }
 /*----------------------------*/
 
@@ -284,7 +296,7 @@ img {
   border-right: 1px solid #E7E9FC;
   border-top: 0;
   margin: 0;
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
 }
 
 /*----------------------------*/
@@ -295,7 +307,7 @@ img {
   padding: 100px 0;
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
